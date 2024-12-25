@@ -1,8 +1,7 @@
-import { useLocalStorage, useHotkeys } from '@mantine/hooks';
-import { type ColorScheme } from '@mantine/core';
+import { useHotkeys, useLocalStorage } from '@mantine/hooks';
 
 export function useColorScheme() {
-  const [colorScheme, setColorScheme] = useLocalStorage<ColorScheme>({
+  const [colorScheme, setColorScheme] = useLocalStorage({
     key: 'color-scheme',
     defaultValue: 'light',
   });

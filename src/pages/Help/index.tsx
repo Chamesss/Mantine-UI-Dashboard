@@ -1,5 +1,5 @@
-import { Stack, Title, Paper, Accordion, TextInput, Button, Text, Group, Badge, Tabs } from '@mantine/core';
-import { Search, Book, Video, MessageCircle } from 'lucide-react';
+import { Accordion, Badge, Button, Group, Paper, Stack, Tabs, Text, TextInput, Title } from '@mantine/core';
+import { Book, MessageCircle, Search, Video } from 'lucide-react';
 
 export function HelpPage() {
   return (
@@ -111,8 +111,6 @@ export function HelpPage() {
               <TextInput
                 label="Message"
                 placeholder="Describe your issue"
-                multiline
-                rows={4}
               />
               <Button>Submit Request</Button>
             </Stack>
